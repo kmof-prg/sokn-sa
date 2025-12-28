@@ -1,7 +1,10 @@
 backend:
+backend:
   name: github
   repo: kmof-prg/sokn-sa
   branch: main
+  auth_type: pkce
+  app_id: Ov23liPq2Mod4uPGciRe
 
 media_folder: "public/uploads"
 public_folder: "/uploads"
