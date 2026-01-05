@@ -76,7 +76,7 @@ app.post('/api/contact', async (c) => {
 // API route to get Paystack public key
 app.get('/api/paystack-key', (c) => {
   // Public key is safe to hardcode (it's meant to be public)
-  const publicKey = 'pk_test_5cce9fbb7c6445b40d47223ad9ae0c4c3714c5e4'
+  const publicKey = 'pk_live_ac3f66c7a1605d0e93e15f811e878c50b7956ab8'
   return c.json({ publicKey })
 })
 
@@ -86,7 +86,7 @@ app.post('/api/initialize-payment', async (c) => {
     const body = await c.req.json()
     const { sevaName, amount, donorName, donorEmail, donorPhone } = body
 
-    const secretKey = c.env?.PAYSTACK_SECRET_KEYtest
+    const secretKey = c.env?.PAYSTACK_SECRET_KEY_LIVE
     if (!secretKey) {
       return c.json({ 
         success: false, 
@@ -153,7 +153,7 @@ app.post('/api/initialize-payment', async (c) => {
 app.get('/api/verify-payment/:reference', async (c) => {
   try {
     const reference = c.req.param('reference')
-    const secretKey = c.env?.PAYSTACK_SECRET_KEYtest
+    const secretKey = c.env?.PAYSTACK_SECRET_KEY_LIVE
 
     if (!secretKey) {
       return c.json({ 

@@ -1,3 +1,3 @@
 export type Env = {
-  PAYSTACK_SECRET_KEYtest: string
+  PAYSTACK_SECRET_KEY_LIVE: string
 }
