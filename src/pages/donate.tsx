@@ -50,14 +50,14 @@ const DonationModal = () => (
 
           <div class="bg-cream-50 p-4 rounded-lg">
             <p class="text-sm text-gray-700 leading-relaxed">
-              <i class="fas fa-info-circle text-maroon-600 mr-2"></i>
-              After submitting, you will be contacted by our team at <strong>accounts@sokn-sa.org</strong> with payment instructions and further details.
+              <i class="fas fa-shield-alt text-green-600 mr-2"></i>
+              You will be redirected to <strong>Paystack</strong> secure payment gateway to complete your donation safely.
             </p>
           </div>
 
           <button type="submit" id="submit-donation-btn" class="btn-primary text-white px-8 py-4 rounded-full font-bold w-full text-lg">
-            <i class="fas fa-heart mr-2"></i>
-            Complete Donation
+            <i class="fas fa-lock mr-2"></i>
+            Proceed to Payment
           </button>
         </form>
       </div>

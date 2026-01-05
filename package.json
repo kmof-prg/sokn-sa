@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "vite",
     "dev:sandbox": "wrangler pages dev dist --ip 0.0.0.0 --port 3000",
-    "build": "tinacms build && vite build",
+    "build": "vite build",
     "preview": "wrangler pages dev",
     "deploy": "npm run build && wrangler pages deploy dist",
     "deploy:prod": "npm run build && wrangler pages deploy dist --project-name sokn-sa",
@@ -13,9 +13,7 @@
     "cf-typegen": "wrangler types --env-interface CloudflareBindings"
   },
   "dependencies": {
-    "hono": "^4.11.1",
-    "tinacms": "^1.5.0",
-    "@tinacms/cli": "^1.5.0"
+    "hono": "^4.11.1"
   },
   "devDependencies": {
     "@hono/vite-build": "^1.2.0",
