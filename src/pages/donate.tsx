@@ -1,5 +1,70 @@
 import { Layout } from '../components/Layout'
 
+const DonationModal = () => (
+  <div id="donation-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+      <div class="p-8">
+        <div class="flex justify-between items-center mb-6">
+          <h2 class="text-3xl font-bold text-maroon-900">Complete Your Donation</h2>
+          <button onclick="closeDonationModal()" class="text-gray-500 hover:text-gray-700 text-3xl">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+
+        <div class="bg-gradient-to-br from-maroon-50 to-cream-50 p-6 rounded-xl mb-6">
+          <p class="text-sm text-gray-600 mb-2">You are donating for:</p>
+          <h3 id="modal-seva-name" class="text-2xl font-bold text-maroon-900 mb-2"></h3>
+          <p id="modal-amount" class="text-3xl font-bold text-maroon-700"></p>
+        </div>
+
+        <div id="donation-status" class="hidden"></div>
+
+        <form id="donation-form" class="space-y-4">
+          <input type="hidden" id="hidden-seva-name" />
+          <input type="hidden" id="hidden-amount" />
+
+          <div id="custom-amount-field" class="hidden">
+            <label class="block text-sm font-semibold text-gray-700 mb-2">Donation Amount (USD) *</label>
+            <input type="number" id="custom-amount-input" min="1" step="1" placeholder="Enter amount" class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-maroon-600 focus:outline-none" />
+          </div>
+
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-2">Full Name *</label>
+            <input type="text" id="donor-name" required class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-maroon-600 focus:outline-none" placeholder="Your full name" />
+          </div>
+
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-2">Email Address *</label>
+            <input type="email" id="donor-email" required class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-maroon-600 focus:outline-none" placeholder="your.email@example.com" />
+          </div>
+
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-2">Phone Number</label>
+            <input type="tel" id="donor-phone" class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-maroon-600 focus:outline-none" placeholder="+27 (optional)" />
+          </div>
+
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-2">Message (Optional)</label>
+            <textarea id="donor-message" rows="3" class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-maroon-600 focus:outline-none resize-none" placeholder="Any special requests or dedications..."></textarea>
+          </div>
+
+          <div class="bg-cream-50 p-4 rounded-lg">
+            <p class="text-sm text-gray-700 leading-relaxed">
+              <i class="fas fa-info-circle text-maroon-600 mr-2"></i>
+              After submitting, you will be contacted by our team at <strong>accounts@sokn-sa.org</strong> with payment instructions and further details.
+            </p>
+          </div>
+
+          <button type="submit" id="submit-donation-btn" class="btn-primary text-white px-8 py-4 rounded-full font-bold w-full text-lg">
+            <i class="fas fa-heart mr-2"></i>
+            Complete Donation
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+)
+
 export const DonatePage = () => {
   return (
     <Layout title="Donate - SOKN South Africa">
@@ -49,7 +114,7 @@ export const DonatePage = () => {
                 <p class="text-sm text-gray-600 mb-2">You decide the amount</p>
                 <input type="number" placeholder="Enter amount" class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-maroon-600 focus:outline-none text-center text-xl font-bold" />
               </div>
-              <button class="btn-primary text-white px-8 py-4 rounded-full font-bold w-full">
+              <button onclick="openDonationModal('Ask Nithyananda', 'custom')" class="btn-primary text-white px-8 py-4 rounded-full font-bold w-full">
                 <i class="fas fa-donate mr-2"></i>
                 Donate Now
               </button>
@@ -67,7 +132,7 @@ export const DonatePage = () => {
               <div class="text-center mb-6">
                 <p class="text-4xl font-bold text-maroon-900">$1,008</p>
               </div>
-              <button class="btn-primary text-white px-8 py-4 rounded-full font-bold w-full">
+              <button onclick="openDonationModal('Worship the Divine\\'s Feet (PPP)', 1008)" class="btn-primary text-white px-8 py-4 rounded-full font-bold w-full">
                 <i class="fas fa-donate mr-2"></i>
                 Donate Now
               </button>
@@ -85,7 +150,7 @@ export const DonatePage = () => {
               <div class="text-center mb-6">
                 <p class="text-4xl font-bold text-maroon-900">$2,008</p>
               </div>
-              <button class="btn-primary text-white px-8 py-4 rounded-full font-bold w-full">
+              <button onclick="openDonationModal('Daily Madapalli Food Offerings', 2008)" class="btn-primary text-white px-8 py-4 rounded-full font-bold w-full">
                 <i class="fas fa-donate mr-2"></i>
                 Donate Now
               </button>
@@ -103,7 +168,7 @@ export const DonatePage = () => {
               <div class="text-center mb-6">
                 <p class="text-4xl font-bold text-maroon-900">$1,008</p>
               </div>
-              <button class="btn-primary text-white px-8 py-4 rounded-full font-bold w-full">
+              <button onclick="openDonationModal('The Ultimate Offering (UTTS)', 1008)" class="btn-primary text-white px-8 py-4 rounded-full font-bold w-full">
                 <i class="fas fa-donate mr-2"></i>
                 Donate Now
               </button>
@@ -124,7 +189,7 @@ export const DonatePage = () => {
               <div class="text-center mb-6">
                 <p class="text-4xl font-bold text-maroon-900">$2,008</p>
               </div>
-              <button class="btn-primary text-white px-8 py-4 rounded-full font-bold w-full">
+              <button onclick="openDonationModal('Grand Package - Exotic Flower & Basil Garland Seva + Archana', 2008)" class="btn-primary text-white px-8 py-4 rounded-full font-bold w-full">
                 <i class="fas fa-donate mr-2"></i>
                 Donate Now
               </button>
@@ -143,7 +208,7 @@ export const DonatePage = () => {
                 <p class="text-sm text-gray-600 mb-2">Combined donation</p>
                 <input type="number" placeholder="Enter amount" class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-maroon-600 focus:outline-none text-center text-xl font-bold" />
               </div>
-              <button class="btn-primary text-white px-8 py-4 rounded-full font-bold w-full">
+              <button onclick="openDonationModal('All Offerings Combined', 'custom')" class="btn-primary text-white px-8 py-4 rounded-full font-bold w-full">
                 <i class="fas fa-donate mr-2"></i>
                 Donate Now
               </button>
@@ -151,6 +216,11 @@ export const DonatePage = () => {
           </div>
         </div>
       </section>
+
+      {/* Donation Modal */}
+      <DonationModal />
+
+      <script src="/static/donate.js"></script>
 
       {/* Jayanthi Package CTA */}
       <section class="py-20 bg-white">

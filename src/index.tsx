@@ -67,4 +67,26 @@ app.post('/api/contact', async (c) => {
   }
 })
 
+// API route for donation form
+app.post('/api/donate', async (c) => {
+  try {
+    const body = await c.req.json()
+    const { sevaName, amount, donorName, donorEmail, donorPhone, donorMessage } = body
+
+    // Email sending logic would go here
+    // For now, we'll return success and log the donation
+    console.log('Donation submission:', { sevaName, amount, donorName, donorEmail, donorPhone, donorMessage })
+
+    return c.json({ 
+      success: true, 
+      message: `Thank you for your generous donation of $${amount} for ${sevaName}. Our team will contact you at ${donorEmail} with payment details.` 
+    })
+  } catch (error) {
+    return c.json({ 
+      success: false, 
+      message: 'An error occurred. Please try again or contact accounts@sokn-sa.org directly.' 
+    }, 500)
+  }
+})
+
 export default app
