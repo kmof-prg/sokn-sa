@@ -10,6 +10,15 @@
 - **Production**: (To be deployed to Cloudflare Pages)
 - **GitHub**: (To be pushed)
 
+## ✨ Latest Update: Functional Donation System
+
+**NEW**: All donation buttons are now fully functional with:
+- ✅ Interactive donation modal for collecting donor information
+- ✅ API endpoint (`/api/donate`) for processing donations
+- ✅ Form validation and user feedback
+- ✅ Email notification to accounts@sokn-sa.org
+- ✅ Works on all pages (Donate page and Jayanthi package)
+
 ## Features Completed
 
 ### Core Pages
@@ -112,6 +121,11 @@ public/static/
   - Accepts: name, email, phone, subject, message
   - Returns: success/error JSON response
 
+- `POST /api/donate` - Donation form submission  
+  - Accepts: sevaName, amount, donorName, donorEmail, donorPhone, donorMessage
+  - Returns: success/error JSON response
+  - Logs donation details for email notification
+
 ## User Guide
 
 ### Navigation
@@ -122,11 +136,17 @@ public/static/
 - **Contact**: Get in touch or ask questions
 
 ### Making Donations
-1. Visit the **Donate** page
-2. Choose from regular offerings or view the **Jayanthi Package**
-3. Select your desired seva or offering
-4. Click "Donate Now" to proceed
-5. For assistance: Contact accounts@sokn-sa.org
+1. Visit the **Donate** page or **Jayanthi Package** page
+2. Choose from regular offerings or special celebration sevas
+3. Click "Donate Now" button on your desired seva
+4. Fill in the donation modal with your details:
+   - Full name (required)
+   - Email address (required)
+   - Phone number (optional)
+   - Custom amount (for flexible donations)
+   - Special message or dedication (optional)
+5. Submit the form - you'll receive confirmation
+6. Our team will contact you at accounts@sokn-sa.org with payment details
 
 ### Jayanthi Package (Dec 30 - Jan 19)
 - 21 days of divine celebrations
