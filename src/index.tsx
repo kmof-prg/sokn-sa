@@ -75,7 +75,8 @@ app.post('/api/contact', async (c) => {
 
 // API route to get Paystack public key
 app.get('/api/paystack-key', (c) => {
-  const publicKey = c.env?.PAYSTACK_PUBLIC_KEY || 'pk_test_5cce9fbb7c6445b40d47223ad9ae0c4c3714c5e4'
+  // Public key is safe to hardcode (it's meant to be public)
+  const publicKey = 'pk_test_5cce9fbb7c6445b40d47223ad9ae0c4c3714c5e4'
   return c.json({ publicKey })
 })
 
