@@ -5,7 +5,6 @@ const episodes = [
     id: 'intro',
     title: 'Introduction to the Series',
     price: 21,
-    duration: '~15 min',
     description: 'Why should anyone listen to the life of a living Avatar? The gateway episode — listen before deciding on anything else.',
     targetAudience: 'First-time listeners, Curious spiritual seekers, Youth & general public',
     coreAngle: 'Why Avatar stories are not mythology',
@@ -15,7 +14,6 @@ const episodes = [
     id: 'ep1',
     title: 'The Greatest Happening – Divine Conception & Descent',
     price: 54,
-    duration: '~45 min',
     description: 'Avatars don\'t take birth — they DESCEND. Discover the cosmic reality behind divine conception.',
     targetAudience: 'Devotees, Sanatana Dharma followers, Mythology & avatar researchers',
     coreAngle: 'Understanding the difference between biological birth and divine descent'
@@ -24,7 +22,6 @@ const episodes = [
     id: 'ep2',
     title: 'Early Wonders of the Avatar\'s Childhood',
     price: 54,
-    duration: '~45 min',
     description: 'Extraordinary consciousness shows in childhood. Not miracles — signs of higher cognition.',
     targetAudience: 'Parents, Families, Youth, Common public',
     coreAngle: 'Witness the signs of divine consciousness in early years'
@@ -33,7 +30,6 @@ const episodes = [
     id: 'ep3',
     title: 'Unimaginable Training of Raghupathi Yogi',
     price: 54,
-    duration: '~45 min',
     description: 'Real yogic training is not comfort — it is alchemy. This episode will shatter comfort-based spirituality.',
     targetAudience: 'Yogis, Seekers, Discipline-oriented minds, Fitness & yoga practitioners',
     coreAngle: 'Traditional tapas vs modern yoga'
@@ -42,7 +38,6 @@ const episodes = [
     id: 'ep4',
     title: 'Swamiji\'s Ecosystem of Gurus',
     price: 54,
-    duration: '~45 min',
     description: 'An Avatar honors the Guru ecosystem. This episode heals confusion around Guru tattva.',
     targetAudience: 'Spiritual intellectuals, Guru-bhakti oriented devotees',
     coreAngle: 'Guru is not hierarchy — Guru is ecosystem'
@@ -51,7 +46,6 @@ const episodes = [
     id: 'ep5',
     title: 'Cosmic Entry of Arunagiri Yogeshwara',
     price: 108,
-    duration: '~60 min',
     description: 'Not a meeting — a cosmic convergence. This is not information. This is transmission.',
     targetAudience: 'Serious devotees, Advanced seekers, People experiencing spiritual awakenings',
     coreAngle: 'Experience the cosmic convergence',
@@ -61,7 +55,6 @@ const episodes = [
     id: 'ep6',
     title: 'Training with Arunagiri Yogeshwara',
     price: 108,
-    duration: '~60 min',
     description: 'How avatars are prepared to hold cosmic responsibility. This episode is for those ready to listen responsibly.',
     targetAudience: 'Initiated disciples, Yoga teachers, Spiritual leaders',
     coreAngle: 'Preparation for cosmic responsibility',
@@ -71,7 +64,6 @@ const episodes = [
     id: 'ep7',
     title: 'Bundle of Joy – His Childhood',
     price: 54,
-    duration: '~45 min',
     description: 'Joy is a spiritual frequency. An episode that heals the inner child.',
     targetAudience: 'General public, Families, Women devotees',
     coreAngle: 'Innocence + bliss as spiritual frequencies'
@@ -80,7 +72,6 @@ const episodes = [
     id: 'ep8',
     title: 'Parivrajaka – The Wandering Days',
     price: 54,
-    duration: '~45 min',
     description: 'Walking away to discover the cosmos. When life demanded more than society could offer.',
     targetAudience: 'Renunciates, Seekers questioning life direction, Youth at crossroads',
     coreAngle: 'Detachment, search, and courage'
@@ -89,7 +80,6 @@ const episodes = [
     id: 'ep9',
     title: 'Radiating Powers & Gifting Powers',
     price: 54,
-    duration: '~45 min',
     description: 'Powers are side effects of consciousness. Understand powers without superstition.',
     targetAudience: 'Power manifestation curious public, Devotees, Skeptics',
     coreAngle: 'Not magic, not show — pure consciousness'
@@ -121,10 +111,6 @@ export const PodcastsPage = () => {
             <div class="flex items-center">
               <i class="fas fa-headphones mr-2"></i>
               <span>10 Sacred Episodes</span>
-            </div>
-            <div class="flex items-center">
-              <i class="fas fa-clock mr-2"></i>
-              <span>7+ Hours of Content</span>
             </div>
             <div class="flex items-center">
               <i class="fas fa-infinity mr-2"></i>
@@ -245,7 +231,6 @@ export const PodcastsPage = () => {
                           )}
                         </div>
                         <div class="flex items-center gap-4 text-sm text-gray-600 mb-3">
-                          <span><i class="fas fa-clock mr-1"></i>{episode.duration}</span>
                           <span><i class="fas fa-dollar-sign mr-1"></i>{episode.price} USD</span>
                         </div>
                       </div>
