@@ -345,3 +345,56 @@ December 18, 2025
 ---
 
 **Note**: This website is built with Hono framework and deployed on Cloudflare Pages for optimal performance and global edge delivery.
+
+
+## 🎙️ Podcast Pages
+
+### Avatar Leela Series
+**The extraordinary life story of Bhagavan Sri Nithyananda Paramashivam**
+- **Episodes**: 10 Sacred Episodes (Intro + EP1-9)
+- **Duration**: 7+ Hours of transformative content
+- **Individual Pricing**:
+  - Introduction: $21 USD
+  - Episodes 1-4, 7-9: $54 USD each
+  - Episodes 5-6 (PREMIUM): $108 USD each
+- **Bundle Offer**: Complete Series Package - $408 USD (Save $207 • 34% OFF)
+- **Target Audiences**: Devotees, Seekers, Spiritual practitioners, General public
+- **Features**: Detailed episode descriptions, target audience breakdown, core angles explained
+
+### Sacred Podcast Series
+**Complete Scripture Decodings by SPH Bhagavan Sri Nithyananda Paramashivam**
+
+Four complete scripture decoding series with AI-generated spiritual imagery:
+
+1. **🌸 Bhagavad Gita – Complete Decoding**
+   - **Episodes**: 18
+   - **Content**: Krishna's eternal science for enlightenment, leadership, inner clarity, and conscious living
+   - **Price**: $108 USD
+   - **Image**: AI-generated Lord Krishna playing flute
+
+2. **🌺 Devi Gita – Decodings of the Divine Mother**
+   - **Content**: Divine Feminine (Shakti) truths decoded for modern seekers
+   - **Price**: $108 USD
+   - **Image**: AI-generated Divine Mother Devi
+
+3. **🐘 Ganesha Gita – Complete Decoding**
+   - **Content**: Ganapati wisdom for obstacle removal, intelligence awakening, and conscious living
+   - **Price**: $108 USD
+   - **Image**: AI-generated adorable Lord Ganesha
+
+4. **🕉️ Sarvajñānottara Āgama – Complete Decoding Series**
+   - **Content**: Rare decodings for Samadhi and Kailasa-state existence
+   - **Price**: $108 USD
+   - **Image**: AI-generated sacred Shiva symbols
+
+**Complete Sacred Library Bundle**:
+- All 4 Sacred Podcast Series included
+- Individual Total: $432 USD
+- Bundle Price: $348 USD
+- **Save $84** (20% OFF)
+
+### Payment Integration
+- All podcast purchases use Paystack secure payment gateway
+- Live payment processing with real transactions
+- Customer information collected (name, email, phone)
+- Transaction tracking via Paystack dashboard
