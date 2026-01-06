@@ -355,6 +355,157 @@ export const PodcastsPage = () => {
         </div>
       </section>
 
+      {/* Sacred Podcast Series */}
+      <section class="py-20 bg-gradient-to-br from-maroon-900 to-maroon-700 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <span class="bg-cream-500 text-white px-4 py-2 rounded-full text-sm font-bold mb-4 inline-block">
+              📿 SACRED DECODINGS
+            </span>
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">
+              Sacred Podcast Series
+            </h2>
+            <div class="w-24 h-1 bg-cream-500 mx-auto mb-6"></div>
+            <p class="text-xl text-cream-200 max-w-3xl mx-auto leading-relaxed">
+              Decodings by The SPH Bhagavan Sri Nithyananda Paramashivam
+            </p>
+            <p class="text-lg text-cream-300 max-w-4xl mx-auto mt-4">
+              Receive the original Hindu scriptures decoded directly by The Supreme Pontiff of Hinduism, revealing their experiential, mystical, and applied spiritual sciences.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Bhagavad Gita */}
+            <div class="bg-white rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition card-hover">
+              <div class="relative h-64">
+                <img src="/static/images/krishna-flute.jpg" alt="Bhagavad Gita" class="w-full h-full object-cover" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div class="absolute bottom-4 left-4 right-4">
+                  <h3 class="text-2xl font-bold text-white mb-2">🌸 Bhagavad Gita – Complete Decoding</h3>
+                  <p class="text-cream-200 text-sm">As Decoded by SPH Bhagavan Sri Nithyananda Paramashivam</p>
+                </div>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between mb-4">
+                  <span class="text-sm text-gray-600">Total Episodes: <strong class="text-maroon-900">18</strong></span>
+                  <span class="text-2xl font-bold text-maroon-700">USD $108</span>
+                </div>
+                <p class="text-gray-700 mb-6 leading-relaxed">
+                  Krishna's eternal science for enlightenment, leadership, inner clarity, and conscious living. A powerful decoding revealing the experiential truths behind every verse.
+                </p>
+                <button onclick="openDonationModal('Bhagavad Gita – Complete Decoding Podcast Series', 108)" class="w-full bg-maroon-700 hover:bg-maroon-600 text-white px-6 py-3 rounded-full font-bold transition">
+                  <i class="fas fa-headphones mr-2"></i>
+                  Get Full Series
+                </button>
+              </div>
+            </div>
+
+            {/* Devi Gita */}
+            <div class="bg-white rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition card-hover">
+              <div class="relative h-64">
+                <img src="/static/images/devi-gita.jpg" alt="Devi Gita" class="w-full h-full object-cover" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div class="absolute bottom-4 left-4 right-4">
+                  <h3 class="text-2xl font-bold text-white mb-2">🌺 Devi Gita – Decodings of the Divine Mother</h3>
+                  <p class="text-cream-200 text-sm">As Decoded by SPH Bhagavan Sri Nithyananda Paramashivam</p>
+                </div>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between mb-4">
+                  <span class="text-sm text-gray-600">Complete Podcast Package</span>
+                  <span class="text-2xl font-bold text-maroon-700">USD $108</span>
+                </div>
+                <p class="text-gray-700 mb-6 leading-relaxed">
+                  Receive the truths of the Divine Feminine (Shakti) decoded for modern seekers. Understand the cosmic power of the Mother and how to awaken it within.
+                </p>
+                <button onclick="openDonationModal('Devi Gita – Decodings of the Divine Mother', 108)" class="w-full bg-maroon-700 hover:bg-maroon-600 text-white px-6 py-3 rounded-full font-bold transition">
+                  <i class="fas fa-headphones mr-2"></i>
+                  Get Full Series
+                </button>
+              </div>
+            </div>
+
+            {/* Ganesha Gita */}
+            <div class="bg-white rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition card-hover">
+              <div class="relative h-64">
+                <img src="/static/images/ganesha-gita.jpg" alt="Ganesha Gita" class="w-full h-full object-cover" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div class="absolute bottom-4 left-4 right-4">
+                  <h3 class="text-2xl font-bold text-white mb-2">🐘 Ganesha Gita – Complete Decoding</h3>
+                  <p class="text-cream-200 text-sm">As Decoded by SPH Bhagavan Sri Nithyananda Paramashivam</p>
+                </div>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between mb-4">
+                  <span class="text-sm text-gray-600">Full Series Included</span>
+                  <span class="text-2xl font-bold text-maroon-700">USD $108</span>
+                </div>
+                <p class="text-gray-700 mb-6 leading-relaxed">
+                  Ganapati wisdom for obstacle removal, intelligence awakening, and conscious living. Learn the secrets of effortless success and divine protection.
+                </p>
+                <button onclick="openDonationModal('Ganesha Gita – Complete Decoding Podcast Series', 108)" class="w-full bg-maroon-700 hover:bg-maroon-600 text-white px-6 py-3 rounded-full font-bold transition">
+                  <i class="fas fa-headphones mr-2"></i>
+                  Get Full Series
+                </button>
+              </div>
+            </div>
+
+            {/* Sarvajñānottara Āgama */}
+            <div class="bg-white rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition card-hover">
+              <div class="relative h-64">
+                <img src="/static/images/agama-sacred.jpg" alt="Sarvajñānottara Āgama" class="w-full h-full object-cover" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div class="absolute bottom-4 left-4 right-4">
+                  <h3 class="text-2xl font-bold text-white mb-2">🕉️ Sarvajñānottara Āgama – Complete Decoding</h3>
+                  <p class="text-cream-200 text-sm">As Decoded by SPH Bhagavan Sri Nithyananda Paramashivam</p>
+                </div>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between mb-4">
+                  <span class="text-sm text-gray-600">Entire Series - Complete Package</span>
+                  <span class="text-2xl font-bold text-maroon-700">USD $108</span>
+                </div>
+                <p class="text-gray-700 mb-6 leading-relaxed">
+                  Rare decodings of the Sarvajñānottara Āgama for Samadhi and Kailasa-state existence. Ancient wisdom for achieving the ultimate state of consciousness.
+                </p>
+                <button onclick="openDonationModal('Sarvajñānottara Āgama – Complete Decoding Series', 108)" class="w-full bg-maroon-700 hover:bg-maroon-600 text-white px-6 py-3 rounded-full font-bold transition">
+                  <i class="fas fa-headphones mr-2"></i>
+                  Get Full Series
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* Bundle Offer for Sacred Series */}
+          <div class="mt-16 bg-gradient-to-r from-cream-600 to-cream-500 rounded-2xl p-8 shadow-2xl">
+            <div class="text-center">
+              <h3 class="text-3xl font-bold text-white mb-4">
+                <i class="fas fa-gift mr-2"></i>
+                Complete Sacred Library Bundle
+              </h3>
+              <p class="text-cream-100 text-lg mb-6">
+                Get all 4 Sacred Podcast Series and save $84
+              </p>
+              <div class="flex items-center justify-center gap-8 mb-6">
+                <div>
+                  <p class="text-sm text-cream-200">Individual Price:</p>
+                  <p class="text-2xl font-bold text-white line-through">$432</p>
+                </div>
+                <i class="fas fa-arrow-right text-3xl text-white"></i>
+                <div>
+                  <p class="text-sm text-cream-200">Bundle Price:</p>
+                  <p class="text-4xl font-bold text-white">$348</p>
+                </div>
+              </div>
+              <button onclick="openDonationModal('Complete Sacred Library Bundle - All 4 Series', 348)" class="bg-white text-maroon-900 px-12 py-4 rounded-full font-bold text-xl hover:bg-cream-100 transition shadow-2xl">
+                <i class="fas fa-shopping-cart mr-2"></i>
+                Get Complete Library - Save $84
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <section class="py-20 hero-gradient relative overflow-hidden">
         <div class="absolute inset-0 opacity-10">
