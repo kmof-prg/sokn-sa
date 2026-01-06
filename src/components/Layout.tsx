@@ -130,6 +130,7 @@ export const Layout = ({ children, title = 'SOKN South Africa' }: { children: an
                 <a href="/" class="nav-link text-gray-700 hover:text-maroon-700 font-medium">Home</a>
                 <a href="/about" class="nav-link text-gray-700 hover:text-maroon-700 font-medium">About</a>
                 <a href="/programs" class="nav-link text-gray-700 hover:text-maroon-700 font-medium">Programs</a>
+                <a href="/podcasts" class="nav-link text-gray-700 hover:text-maroon-700 font-medium">Podcasts</a>
                 <a href="/donate" class="nav-link text-gray-700 hover:text-maroon-700 font-medium">Donate</a>
                 <a href="/contact" class="nav-link text-gray-700 hover:text-maroon-700 font-medium">Contact</a>
               </div>
@@ -156,6 +157,7 @@ export const Layout = ({ children, title = 'SOKN South Africa' }: { children: an
               <a href="/" class="block text-gray-700 hover:text-maroon-700 font-medium py-2">Home</a>
               <a href="/about" class="block text-gray-700 hover:text-maroon-700 font-medium py-2">About</a>
               <a href="/programs" class="block text-gray-700 hover:text-maroon-700 font-medium py-2">Programs</a>
+              <a href="/podcasts" class="block text-gray-700 hover:text-maroon-700 font-medium py-2">Podcasts</a>
               <a href="/donate" class="block text-gray-700 hover:text-maroon-700 font-medium py-2">Donate</a>
               <a href="/contact" class="block text-gray-700 hover:text-maroon-700 font-medium py-2">Contact</a>
               <a href="/donate" class="btn-primary text-white px-6 py-3 rounded-full font-semibold shadow-lg inline-block mt-2">

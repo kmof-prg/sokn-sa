@@ -9,6 +9,7 @@ import { JayanthiPage } from './pages/jayanthi'
 import { ContactPage } from './pages/contact'
 import { ProgramsPage } from './pages/programs'
 import { PaymentSuccessPage } from './pages/payment-success'
+import { PodcastsPage } from './pages/podcasts'
 import type { Env } from './types/env'
 
 const app = new Hono<{ Bindings: Env }>()
@@ -41,6 +42,10 @@ app.get('/jayanthi', (c) => {
 
 app.get('/programs', (c) => {
   return c.render(<ProgramsPage />)
+})
+
+app.get('/podcasts', (c) => {
+  return c.render(<PodcastsPage />)
 })
 
 app.get('/contact', (c) => {

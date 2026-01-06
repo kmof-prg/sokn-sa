@@ -277,6 +277,63 @@ export const ProgramsPage = () => {
         </div>
       </section>
 
+      {/* Podcasts Section */}
+      <section class="py-20 bg-gradient-to-br from-maroon-900 to-maroon-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="text-white">
+              <div class="inline-block bg-white/20 backdrop-blur-sm rounded-full px-6 py-2 mb-6">
+                <span class="text-cream-100 font-semibold">
+                  <i class="fas fa-podcast mr-2"></i>
+                  Sacred Audio Series
+                </span>
+              </div>
+              <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                Avatar Leela Series
+              </h2>
+              <p class="text-xl text-cream-200 mb-6 leading-relaxed">
+                The extraordinary life story of Bhagavan Sri Nithyananda Paramashivam — told as it happened, experienced as it transforms.
+              </p>
+              <ul class="space-y-3 mb-8 text-cream-200">
+                <li class="flex items-start">
+                  <i class="fas fa-headphones text-cream-400 mr-3 mt-1"></i>
+                  <span>10 Sacred Episodes covering divine descent to cosmic manifestation</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-clock text-cream-400 mr-3 mt-1"></i>
+                  <span>7+ Hours of transformative content</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-gift text-cream-400 mr-3 mt-1"></i>
+                  <span>Complete bundle at special price: $408 (Save $207)</span>
+                </li>
+              </ul>
+              <a href="/podcasts" class="bg-white text-maroon-900 px-8 py-4 rounded-full font-bold text-lg inline-block hover:bg-cream-100 transition shadow-2xl">
+                <i class="fas fa-play mr-2"></i>
+                Explore Podcasts
+              </a>
+            </div>
+            <div class="bg-white/10 backdrop-blur-sm p-8 rounded-2xl">
+              <h3 class="text-2xl font-bold text-white mb-6">Featured Episodes</h3>
+              <div class="space-y-4">
+                <div class="bg-white/10 p-4 rounded-xl">
+                  <p class="font-semibold text-cream-100 mb-1">Introduction to the Series</p>
+                  <p class="text-sm text-cream-300">Start here — $21</p>
+                </div>
+                <div class="bg-white/10 p-4 rounded-xl">
+                  <p class="font-semibold text-cream-100 mb-1">Divine Conception & Descent</p>
+                  <p class="text-sm text-cream-300">How avatars descend — $54</p>
+                </div>
+                <div class="bg-white/10 p-4 rounded-xl">
+                  <p class="font-semibold text-cream-100 mb-1">Cosmic Entry of Arunagiri Yogeshwara</p>
+                  <p class="text-sm text-cream-300">Premium episode — $108</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Call to Action */}
       <section class="py-20 hero-gradient relative overflow-hidden">
         <div class="absolute inset-0 opacity-10">
